@@ -1,2 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Mova';
+  src: url('src/fonts/mova.otf');
+}
+
+.hero {
+  font-family: "Mova";
+  font-size: 2rem;
+  color: #333;
+}

@@ -59,7 +59,7 @@ const TrueFocus = ({
   };
 
   return (
-    <div className="relative flex gap-4  flex-wrap -top-90 -right-36 text-9xl" ref={containerRef}>
+    <div className="relative flex gap-4  flex-wrap -top-100 -right-36 text-9xl" ref={containerRef}>
       {words.map((word, index) => {
         const isActive = index === currentIndex;
         return (

@@ -3,7 +3,7 @@ import Navbar from './assets/component/Navbar'
 import BlobCursor from './assets/component/BlobCursor'
 import Hero from './assets/component/Hero'
 import TrueFocus from './assets/component/TrueFocus';
-
+import './index.css'
 
 const App = () => {
   return (
