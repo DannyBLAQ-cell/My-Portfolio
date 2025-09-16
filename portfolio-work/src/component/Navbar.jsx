@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
 <>
 
-<section className='flex  justify-center m-9'>
+<section className='flex  justify-center self-center p-6   fixed z-1000  backdrop-blur-sm top-0 w-screen'>
 <div>
    <img src="src/assets/images/initials-2.png" alt="" className='w-25 hover: hover:animate-ping justify-left' />
 

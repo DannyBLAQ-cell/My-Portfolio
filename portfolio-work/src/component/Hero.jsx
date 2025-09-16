@@ -18,8 +18,8 @@ const handleMouseMovement=(e)=>{
     // clientxgives mouse position hrizontally
     const{innerWidth, innerHeight}=window;
     // this is to normalise the width and height of the window ant different positions left..middle and right
-    const offSetX= ((e.clientX / innerWidth)-0.5)*25;
-    const offSetY= ((e.clientY / innerHeight)-0.5)*25;
+    const offSetX= ((e.clientX / innerWidth)-0.5)*40;
+    const offSetY= ((e.clientY / innerHeight)-0.5)*40;
 // .set is to update it
 x.set(offSetX);
 y.set(offSetY);
@@ -28,8 +28,14 @@ y.set(offSetY);
     
   return (
    <>
-   <section className='flex gap-20 '>
-   <div className='m-35 mt-30'>
+   <section className='flex gap-20 mt-40'>
+   <motion.div className='m-35 mt-30'
+   initial={{x:-200, opacity:0 }}
+   whileInView={{x:0,opacity:1}}
+ transition={{ duration: 1, ease: "easeOut" }}
+   viewport={{once:true}}
+//    onViewportLeave={{x:-200,opacity:0}}
+   >
     <h1 className='text-7xl font-bold  mt-20 z-50 font-bold  font-bold' >
     
     </h1>
@@ -40,7 +46,7 @@ y.set(offSetY);
     <p className=' text-4xl font-bold text-gray-600 mt-6 z-50  ' >
         I'm a Software Engineer 
     </p>
-   </div>
+   </motion.div>
 
    <div className=' rounded-full mt-10 mr-20 p-1 z-50 bg-gradient-to-r from-purple-400 to-pink-600 h-110' onMouseMove={handleMouseMovement}>
     
@@ -53,7 +59,10 @@ y.set(offSetY);
       
  }} 
  className='w-180 h-110   '
-
+  initial={{ opacity: 0, scale: 0.6 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: true }}
     />
 
    </div></section>

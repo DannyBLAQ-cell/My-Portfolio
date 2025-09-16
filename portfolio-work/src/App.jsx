@@ -1,14 +1,16 @@
 import React from 'react'
-import Navbar from './assets/component/Navbar'
-import BlobCursor from './assets/component/BlobCursor'
-import Hero from './assets/component/Hero'
-import TrueFocus from './assets/component/TrueFocus';
+import Navbar from './component/Navbar'
+import BlobCursor from './component/BlobCursor'
+import Hero from './component/Hero'
+import TrueFocus from './component/TrueFocus';
+import About from './component/About'
+import Tech from './component/Tech'
 import './index.css'
 
 const App = () => {
   return (
    <>
-
+<section>
    <div  className="relative w-screen min-h-screen">
    <Navbar />
    <BlobCursor
@@ -41,9 +43,15 @@ blurAmount={5}
 borderColor="purple"
 animationDuration={1}
 pauseBetweenAnimations={1}
-/>
-  </div>
-   </> 
+/> 
+
+
+  </div> 
+  
+   <About />
+
+   <Tech/>
+  </section> </> 
   )
 }
 

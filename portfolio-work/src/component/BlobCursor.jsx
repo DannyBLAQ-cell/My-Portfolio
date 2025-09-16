@@ -81,7 +81,7 @@ export default function BlobCursor({
     <div
     ref={containerRef}
  
-  className="absolute inset-0 w-full h-full "
+  className="fixed inset-0 w-screen h-screen "
   style={{ zIndex }}
     >
       {useFilter && (
